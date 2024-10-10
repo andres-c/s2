@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>959552373945-3mmh1pmlsaa27r08i780mcqffqbj9rv4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.959552373945-3mmh1pmlsaa27r08i780mcqffqbj9rv4</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>959552373945-2fij0fgh4n6ft8j9rqnej2h0v3an1vo7.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB6nuusoeDaWZ5Yog8NgVFIY1q9-AgICjk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>959552373945</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.andres.cisneros.Fridgify</string>
+	<key>PROJECT_ID</key>
+	<string>fridgly-e9705</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fridgly-e9705.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:959552373945:ios:d0dd45d0b36bb0e8784768</string>
+</dict>
+</plist>

@@ -7,7 +7,12 @@ import { doc, setDoc, getDoc, collection, addDoc } from 'firebase/firestore';
 import { router } from 'expo-router';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
-import { GOOGLE_AUTH_CONFIG } from '../config/config';
+
+// Define the Google Auth configuration
+const GOOGLE_AUTH_CONFIG = {
+  clientId: '959552373945-pibenqa56k6rhjma9b2rnb25tbsvsd28.apps.googleusercontent.com',
+  scopes: ['profile', 'email'],
+};
 
 // Ensure the WebBrowser auth session behaves correctly
 WebBrowser.maybeCompleteAuthSession();
@@ -92,7 +97,7 @@ export default function LoginScreen() {
           _text={{ color: 'white' }}
           _pressed={{ bg: 'primary.600' }}
           width="200px"
-          leftIcon={<Image source={require('../../assets/images/google-logo.png')} size="xs" alt="Google logo" />}
+          // leftIcon={<Image source={require('../../assets/images/google-logo.png')} size="xs" alt="Google logo" />}
         >
           Sign in with Google
         </Button>

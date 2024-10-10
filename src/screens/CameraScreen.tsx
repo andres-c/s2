@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Camera } from 'expo-camera';
+import { Camera, CameraType } from 'expo-camera';
 import * as ImageManipulator from 'expo-image-manipulator';
 import { Box, Button, Center, VStack, Text, useToast, View, Spinner } from 'native-base';
 import { StyleSheet, Dimensions } from 'react-native';
@@ -13,7 +13,7 @@ const FRAME_HEIGHT = SCREEN_HEIGHT * 0.5;
 
 export default function CameraScreen({ navigation }) {
   const [hasPermission, setHasPermission] = useState(null);
-  const [type, setType] = useState(Camera.Constants.Type.back);
+  const [type, setType] = useState(CameraType.back);
   const [isProcessing, setIsProcessing] = useState(false);
   const cameraRef = useRef(null);
   const toast = useToast();

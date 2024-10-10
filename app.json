@@ -18,19 +18,25 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.andres.cisneros.Fridgify",
-      "googleServicesFile": "./GoogleService-Info.plist"
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan receipts for food item tracking.",
+        "NSPhotoLibraryUsageDescription": "This app requires access to the photo library to save and retrieve receipt images.",
+        "NSMicrophoneUsageDescription": "This app uses the microphone for voice notes related to food items."
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        // "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.andres.cisneros.Fridgify",
-      "googleServicesFile": "./google-services.json"
+      "googleServicesFile": "./google-services.json",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE", "RECORD_AUDIO"]
     },
     "web": {
       "bundler": "metro",
-      "favicon": "./assets/images/favicon.png"
+      // "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
@@ -44,13 +50,17 @@
         }
       ],
       [
-        "expo-notifications",
+        "expo-camera",
         {
-          "icon": "./assets/images/notification-icon.png",
-          "color": "#ffffff",
-          "sounds": [
-            "./assets/sounds/notification-sound.wav"
-          ]
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan receipts for food item tracking."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos to save and retrieve receipt images.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos of receipts.",
+          "isAccessMediaLocationEnabled": true
         }
       ]
     ],

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "959552373945",
+    "project_id": "fridgly-e9705",
+    "storage_bucket": "fridgly-e9705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959552373945:android:25e80a0f70df595d784768",
+        "android_client_info": {
+          "package_name": "com.andres.cisneros.Fridgify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959552373945-2fij0fgh4n6ft8j9rqnej2h0v3an1vo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andres.cisneros.Fridgify",
+            "certificate_hash": "13c46610e14a69f55ad047b528f875bb6b1af53c"
+          }
+        },
+        {
+          "client_id": "959552373945-pibenqa56k6rhjma9b2rnb25tbsvsd28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm9VEDSmYU3Ed6p1cCu1tY-RsqeYG5-Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959552373945-pibenqa56k6rhjma9b2rnb25tbsvsd28.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "959552373945-3mmh1pmlsaa27r08i780mcqffqbj9rv4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.andres.cisneros.Fridgify"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
